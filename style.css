@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  background: #2b2d31;
+  font-family: Arial;
+  color: white;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background: #1e1f22;
+  padding: 15px;
+}
+
+.sidebar h2 {
+  color: #5865f2;
+}
+
+.chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.message {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.message img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.bubble {
+  background: #313338;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.input-area {
+  display: flex;
+  padding: 10px;
+  background: #1e1f22;
+}
+
+#input {
+  flex: 1;
+  padding: 10px;
+  background: #2b2d31;
+  border: none;
+  color: white;
+}
+
+#send {
+  background: #5865f2;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.channel {
+  padding: 8px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.channel:hover {
+  background: #2b2d31;
+}
+
+.channel.active {
+  background: #404249;
+  color: white;
+}
+
